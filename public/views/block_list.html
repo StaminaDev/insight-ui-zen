@@ -1,7 +1,7 @@
 <div data-ng-include src="'views/includes/connection.html'"></div>
 <section data-ng-controller="BlocksController" data-ng-init="list()">
   <div class="row">
-    <div class="col-xs-12 col-gray col-gray-fixed">
+    <div class="col-xs-12 col-gray col-gray-fixed" id="block_finder">
       <div class="block-id">
         <div class="icon-block text-center">
           <span class="glyphicon glyphicon-list"></span>
@@ -27,6 +27,11 @@
         </div>
       </div>
     </div>
+    <div class="col-xs-12 col-gray-fixed" id="banner">
+       <div class="text-center"><a  class="changenow_banner" href="https://changenow.io/?from=btc&to=zen&utm_source=zenblockexplorer&utm_medium=link&utm_campaign=change_zen">
+          <img id="changenow_img" src="img/changenow_banner.png" style=""></a></div>
+    </div>
+
     <div class="col-xs-12 col-md-9 col-md-offset-3">
       <div class="page-header">
         <h1>
@@ -41,7 +46,7 @@
             <th translate>Timestamp</th>
             <th class="text-right" translate>Transactions</th>
             <th class="text-right hidden-xs" translate>Mined by</th>
-            <th class="text-right" translate>Size</th>
+            <th class="text-right" translate style="padding-right: 30px;">Size</th>
           </tr>
         </thead>
         <tbody>
@@ -53,7 +58,7 @@
           <td>{{b.time * 1000 | date:'medium'}}</td>
           <td class="text-right">{{b.txlength}}</td>
           <td class="text-right hidden-xs"><a href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a></td>
-          <td class="text-right">{{b.size}}</td>
+          <td class="text-right" style="padding-right: 30px;">{{b.size}}</td>
         </tr>
         </tbody>
       </table>

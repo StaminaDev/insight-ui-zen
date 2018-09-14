@@ -1,5 +1,5 @@
 #wrap {
-	min-height: 1170px; 
+	min-height: 1370px; 
 	height: 100%
 	margin: 0 
 	auto: -100px
@@ -21,12 +21,12 @@
     .coin-link {
      float: none !important;
     }
-   /* Растягиваем footer на мобильной версии */
+
    #footer {
-      height: 145px !important;
+      height: 125px !important;
    }
-   /* Делаем отступ спава, чтобы к границе экрана не прижималось */
-   #footer_container {
+
+   #footer>.container {
      padding-left: 10px !important;
    }
 
@@ -54,9 +54,21 @@
 	font-size: 22px;
 }
 
-  #footer {
-      height: 75px;
-   }
+#footer {
+    height: 75px;
+    font-size: 13px;
+
+ }
+.status {
+      background-color: #801975 !important;
+  }
+#footer a {
+  color: #fff !important;
+}
+
+#footer>.container {
+  padding-top: 20px !important;
+}
 
 #links_container {
 	float: none !important;
@@ -79,7 +91,7 @@
 #banner {
 	border:none; 
 	position: absolute;
-	margin-top: 560px;
+	margin-top: 500px;
 	margin-left:5px;
 }
 
@@ -95,7 +107,7 @@
 	margin-top: -46px ;
 	color: #ddd;
 	text-decoration: none;
-
+  margin-right: 35px;
 
 }
 
