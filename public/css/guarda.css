@@ -1,18 +1,18 @@
 #wrap {
-	min-height: 1370px; 
+	min-height: 1370px;
 	height: 100%
-	margin: 0 
+	margin: 0
 	auto: -100px
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 1000px) {
  	#banner {
  		position: static !important ;
 	  margin-top: 25px !important ;
  	}
 
  	#wrap {
- 	    margin: 0 auto -100px; 
+ 	    margin: 0 auto -100px;
   }
     .email {
        float: none !important;
@@ -75,8 +75,8 @@
 }
 
 .changenow_banner {
-	display: block; 
-	margin-left: -15px; 
+	display: block;
+	margin-left: -15px;
 	margin-top: 5px;
 }
   #gecko_widget {
@@ -89,20 +89,20 @@
 }
 
 #banner {
-	border:none; 
+	border:none;
 	position: absolute;
-	margin-top: 500px;
+	margin-top: 570px;
 	margin-left:5px;
 }
 
 .guarda_banner {
-	margin-top: 18px; 
+	margin-top: 18px;
 	margin-left: -8px;
 }
 
 .email {
 	font-weight: normal;
-	font-style: normal; 
+	font-style: normal;
 	font-size: 13px ;
 	margin-top: -46px ;
 	color: #ddd;
