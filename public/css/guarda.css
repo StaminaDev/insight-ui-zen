@@ -43,13 +43,24 @@
 
 }
 
+@font-face {
+  font-family: 'Titillium Web';
+  src: URL('../fonts/12220.ttf') format('ttf');
+}
+
+body {
+  font-family: "Titillium Web", sans-serif !important;
+}
+
 #block_finder {
  position: absolute;
 }
+
 .coin-link {
  font-size:13px !important;
  margin-top: -40px;
 }
+
 #insight_title {
 	font-size: 22px;
 }
